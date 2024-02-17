@@ -31,7 +31,7 @@ export const HeroContainer = styled.div`
 export const HeroTitle = styled.h2`
   font-family: Gloock, serif;
   font-size: 48px;
-  color: ${(props) => props.theme.corSecundaria};
+  color: #eee;
 
   @media (max-width: 768px) {
     font-size: 26px;
