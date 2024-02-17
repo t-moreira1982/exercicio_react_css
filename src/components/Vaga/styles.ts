@@ -1,23 +1,5 @@
 import styled from 'styled-components'
 
-export const ContainerVaga = styled.li`
-  border: 1px solid ${(props) => props.theme.corPrincipal};
-  background-color: ${(props) => props.theme.corSecundaria};
-  color: ${(props) => props.theme.corPrincipal};
-  padding: 16px;
-  transition: all ease 0.3s;
-  border-radius: 8px;
-
-  :hover {
-    background-color: ${(props) => props.theme.corPrincipal};
-    color: ${(props) => props.theme.corSecundaria};
-  }
-`
-export const VagaTitulo = styled.h3`
-  font-weight: bold;
-  margin-bottom: 16px;
-`
-
 export const VagaLink = styled.a`
   border-color: ${(props) => props.theme.corSecundaria};
   background-color: ${(props) => props.theme.corPrincipal};
@@ -31,13 +13,31 @@ export const VagaLink = styled.a`
   border-radius: 8px;
   text-align: center;
 
-  :hover {
-    border-color: ${(props) => props.theme.corPrincipal};
-    background-color: ${(props) => props.theme.corSecundaria};
-    color: ${(props) => props.theme.corPrincipal};
-  }
-
   @media (max-width: 768px) {
     display: block;
   }
+`
+
+export const ContainerVaga = styled.li`
+  border: 1px solid ${(props) => props.theme.corPrincipal};
+  background-color: ${(props) => props.theme.corSecundaria};
+  color: ${(props) => props.theme.corPrincipal};
+  padding: 16px;
+  transition: all ease 0.3s;
+  border-radius: 8px;
+
+  :hover {
+    background-color: ${(props) => props.theme.corPrincipal};
+    color: ${(props) => props.theme.corSecundaria};
+
+    ${VagaLink} {
+      border-color: ${(props) => props.theme.corPrincipal};
+      background-color: ${(props) => props.theme.corSecundaria};
+      color: ${(props) => props.theme.corPrincipal};
+    }
+  }
+`
+export const VagaTitulo = styled.h3`
+  font-weight: bold;
+  margin-bottom: 16px;
 `

@@ -8,7 +8,6 @@ export const FormHero = styled.form`
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
 
   :before {
     position: absolute;
@@ -18,7 +17,7 @@ export const FormHero = styled.form`
     height: 100%;
     background-color: ${(props) => props.theme.corPrincipal};
     content: '';
-    opacity: 0.6;
+    opacity: 0.7;
   }
 
   @media (max-width: 768px) {
